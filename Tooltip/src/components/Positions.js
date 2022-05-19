@@ -4,7 +4,7 @@ import ReactTooltip from "react-tooltip";
 export default function Positions() {
     return (
         <>
-            <div className="hovered">
+            <div className="positions">
                 <h4>Floating tooltip triggered on mouse hover</h4>
                 <a
                     href="#"
