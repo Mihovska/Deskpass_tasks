@@ -11,4 +11,9 @@ function removeQuotes(str) {
     return str.replace(/["‘“”‹›«»„]/g, '');
 }
 
+const quoteString = `"Several students’ books were missing."`;
+
+console.log(`String with quotes: ${quoteString}`);
+console.log(`String with quotes removed: ${removeQuotes(quoteString)}`);
+
 module.exports = { removeQuotes };

@@ -1,5 +1,6 @@
 const request = require('supertest');
 const app = require('../index');
+const blacklist = require('../data/blacklisted');
 
 const agent = request.agent(app);
 
@@ -29,8 +30,8 @@ describe('proxy endpoint', () => {
         expect(res.body.id).toEqual(1);
     });
 
-    it('should deny IP access', async () => {
-       const blacklistedIP = process.env.BLACKLIST;
+    it('should deny an access to an IP from blacklist', async () => {
+       const blacklistedIP = blacklist.blacklistedAddresses[0];
        const text = `${blacklistedIP} IP address is not in the Whitelist`;
        const res = await agent.get('/json_placeholder/posts/1')
            .set('Authorization', 'test_user')

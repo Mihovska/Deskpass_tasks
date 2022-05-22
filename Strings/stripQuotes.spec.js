@@ -1,4 +1,4 @@
-const { removeQuotes } = require('./quotelessStrings');
+const { removeQuotes } = require('./stripQuotes');
 
 describe('removing quotes',function () {
     it('should remove double quotes from a string', function () {

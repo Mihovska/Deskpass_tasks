@@ -6,8 +6,8 @@ export default function Triggers() {
         <>
             <div className="triggers">
 
-                {/*// a tooltip triggered on mouse click with `clickable` prop*/}
-                {/*// so tooltip can respond to mouse(or touch) events*/}
+                {/* a tooltip triggered on mouse click with `clickable` prop */}
+                {/* so tooltip can respond to mouse(or touch) events */}
 
                 <h4>Example of a clickable tooltip</h4>
                 <button
@@ -27,7 +27,7 @@ export default function Triggers() {
                     <input type="text" placeholder="Type something..." />
                 </ReactTooltip>
 
-                {/*// a tooltip triggered on mouse hover and set to custom color with bottom position*/}
+                {/* a tooltip triggered on mouse hover and set to custom color with bottom position */}
                 <h4>Custom colors</h4>
                 <a
                     href="#"
