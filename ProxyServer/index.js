@@ -10,8 +10,8 @@ const app = express();
 
 // Configuration
 const PORT = process.env.PORT || 3000;
-const HOST = process.env.HOST;
-const API_SERVICE_URL = process.env.API_SERVICE_URL;
+const HOST = process.env.HOST || 'localhost';
+const API_SERVICE_URL = 'https://jsonplaceholder.typicode.com';
 const BLACKLIST = blacklist.blacklistedAddresses;
 
 // Logging incoming requests
