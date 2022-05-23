@@ -12,7 +12,7 @@ npm install
 ```
 npm start
 ```
- ## Testing
+## Testing
 
 The tests can be run with following command:
 ```
